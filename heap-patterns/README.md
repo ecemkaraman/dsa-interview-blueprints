@@ -13,7 +13,7 @@ If **yes** → It’s a **heap pattern problem**
 
 | Cluster | Trigger Keywords | Template Type | Example Problems |
 | --- | --- | --- | --- |
-| [**Ranking**](https://github.com/ecemkaraman/dsa-interview-blueprints/tree/main/heap-patterns/top_k_elements) | kth largest, smallest | Min-heap (size `k`) | LC 215, 703 |
+| [**Ranking**](https://github.com/ecemkaraman/dsa-interview-blueprints/tree/main/heap-patterns/kth_ranking) | kth largest, smallest | Min-heap (size `k`) | LC 215, 703 |
 | [**Top-K Elements**](https://github.com/ecemkaraman/dsa-interview-blueprints/tree/main/heap-patterns/top_k_elements) | top-k, most frequent, closest | Min/max-heap (size `k`) | LC 347, 973, 692 |
 | [**Frequency**](https://github.com/ecemkaraman/dsa-interview-blueprints/tree/main/heap-patterns/frequency) | frequent elements, count, score | HashMap + heap | LC 347, 451 |
 | [**Proximity**](https://github.com/ecemkaraman/dsa-interview-blueprints/tree/main/heap-patterns/top_k_elements/k_closest_points.py) | closest/farthest, distance, near origin | Max-heap with comparator | LC 973, 658 |
