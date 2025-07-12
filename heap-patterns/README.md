@@ -29,7 +29,7 @@ If **yes** → It’s a **heap pattern problem**
 | Goal | Template Description |
 | --- | --- |
 | [**Top-K Elements**](https://github.com/ecemkaraman/dsa-interview-blueprints/blob/main/heap-patterns/top_k_elements/top_k_frequent_elements.py) | Min-heap (size `k`), push + pop |
-| [**K-th Largest**](https://github.com/ecemkaraman/dsa-interview-blueprints/blob/main/heap-patterns/top_k_elements/kth_largest_min_heap.py) | Heapify first `k`, then pushpop |
+| [**K-th Largest**](https://github.com/ecemkaraman/dsa-interview-blueprints/blob/main/heap-patterns/kth_ranking/kth_largest_min_heap.py) | Heapify first `k`, then pushpop |
 | [**Frequency-Based Ranking**](https://github.com/ecemkaraman/dsa-interview-blueprints/blob/main/heap-patterns/frequency/sort_char_by_freq.py) | HashMap + heap of `(-freq, val)` |
 | [**Merge K Sorted Lists**](https://github.com/ecemkaraman/dsa-interview-blueprints/blob/main/heap-patterns/k_way_merge/merge_k_sorted_lists.py) | Min-heap of `(val, list_idx, val_idx)` |
 | [**Streaming K-th Largest**](https://github.com/ecemkaraman/dsa-interview-blueprints/blob/main/heap-patterns/streaming/kth_largest_stream_class.py) | Class with min-heap + `add()` method |
