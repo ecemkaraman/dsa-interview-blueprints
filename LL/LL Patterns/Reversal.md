@@ -66,7 +66,7 @@ def reverseBetween(head, m, n):
 
 ---
 
- **🔁 **Reverse in k-Group (LC 25)**
+ 🔁 **Reverse in k-Group (LC 25)**
 
 - 🧷 Init `dummy → head`, `group_prev = dummy` → start reversal after dummy
 - 🔍 **Find `kth` node** (reversal boundary): move `kth = group_prev` ahead `k` times
