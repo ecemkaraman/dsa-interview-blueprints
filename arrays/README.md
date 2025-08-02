@@ -54,4 +54,3 @@ Array Problem
     └── 7) Matrix (2D Arrays)
         • Spiral / rotate / transpose → Simulation/in‑place  
         • 2D range sum → 2D prefix sums
-```
