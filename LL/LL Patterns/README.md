@@ -9,11 +9,7 @@
 - **Nth from end** → `fast ahead n+1 ⇒ slow at node before target`
 - **Palindrome check** → `find mid → reverse 2nd half → compare halves`
 - **Intersection node** → `a=headA, b=headB → switch heads on end ⇒ meet or None`
-<details>
-- **🌀 Detect cycle:** Use `slow`, `fast` (2x speed); if they meet (`fast == slow`)  → cycle exists, else `fast` hits `None`.
-- **🚪 Find cycle entry:** After meeting inside loop, reset `slow = head` → move both 1 step → meeting point = cycle start.
-- **🧭 Find middle of LL:** Use `fast = 2x slow`; when `fast` ends → `slow = mid` (📎 even → 2nd mid, 📎 odd → exact mid).
-</details>
+  
 ---
 
 ### 2. **🔁 Reversal (Full / Partial)**
@@ -90,3 +86,25 @@
 - **Partition by value** → 2 dummies: less & greater, reconnect
 - **Split into parts** → length-based slicing
 - **Group by rules/index** → modular logic (e.g., reverse alt k nodes)
+
+---
+
+<aside>
+
+- **🌀 Detect cycle:** Use `slow`, `fast` (2x speed); if they meet (`fast == slow`)  → cycle exists, else `fast` hits `None`.
+- **🚪 Find cycle entry:** After meeting inside loop, reset `slow = head` → move both 1 step → meeting point = cycle start.
+- **🧭 Find middle of LL:** Use `fast = 2x slow`; when `fast` ends → `slow = mid` (📎 even → 2nd mid, 📎 odd → exact mid).
+- ❌ **Delete node by value**: Use `dummy → head`, track `prev` and `curr`; if `curr.val == target`, remove by `prev.next = curr.next`, else move both forward. Return `dummy.next`.
+- 📍 **Delete N-th from End**: Create `dummy → head` → init `first = second = dummy` → move `first` ahead `n+1` steps (gap = `n`)→ traverse both until `first = None` (end) → now `second.next = target` → delete via `second.next = second.next.next` → return `dummy.next` (new head)
+- 🔁 **Reverse full LL (iterative):** Use `prev`, `curr`, `nxt` to rewire links → shift all forward until `curr` is `None`.
+- 🔁 **Reverse full LL (recursive):** Recurse to tail (`reverse(head.next)`), then reverse links on unwind → `head.next.next = head`, break with `head.next = None`, return new head from deepest call.
+- ⚖️ **Merge 2 sorted LLs:** Init `dummy → head`, use `tail` to build → compare `l1.val` &  `l2.val`, attach smaller → move `tail` & chosen list → attach leftover list to end → return `dummy.next`.
+- 🧹 **Remove duplicates in sorted LL:** Traverse with `curr`; if `curr.val == curr.next.val` → skip duplicate by `curr.next = curr.next.next`.
+- 🔗 **Find intersection of 2 LLs:** Use 2 pointers (`a`, `b`); start on each LL → if `a != b` → move `a = a.next or headB`, `b = b.next or headA`→ they meet at intersection or `None`.
+- ➕ **Add 2 numbers via LLs:** Traverse `l1`, `l2` + `carry`; append `(sum % 10)` to result, update `carry = sum // 10`.
+- 🪞 **Check if LL is palindrome:** Find middle, reverse second half, compare both halves node by node.
+- ✂️ **Split LL into k parts:** Count nodes, calculate part sizes, slice at calculated boundaries using pointer hops.
+
+</aside>
+
+
