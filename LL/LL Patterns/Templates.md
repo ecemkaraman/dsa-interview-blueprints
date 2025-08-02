@@ -1,7 +1,11 @@
-## 1. 🐢🐇 **Two-Pointer Techniques**
 
-- **Cycle Detection**:
-    
+
+<details>
+<summary>## 1. 🐢🐇 **Two-Pointer Techniques**</summary>
+
+  <details>
+    <summary>- **Cycle Detection**:</summary>
+
     `fast = 2x slow` → if they meet(`fast == slow`) → **cycle exists**
     
     - no cycle: `fast` reaches `None`
@@ -18,6 +22,12 @@
         return False  # No cycle
     ```
     
+
+  </details>
+</details>
+
+    
+
 
 ---
 
