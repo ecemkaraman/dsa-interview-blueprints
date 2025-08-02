@@ -1,3 +1,4 @@
+## **🧠 Graph Strategy**
 ```python
 Graph Problem
 ├── I. Graph Type (Graph Lens)

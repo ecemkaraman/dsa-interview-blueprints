@@ -1,3 +1,50 @@
+## **🧠 Heap Strategy**
+
+```python
+Heap Problem
+├── I. Heap Type (Heap Lens)
+│   ├── min-heap / max-heap
+│   ├── bounded size (top-K) / unbounded
+│   ├── single heap / double heap (two-heaps for median)
+│   ├── binary heap (array-based) / d-ary heap (rare)
+│   └── priority queue behavior → extract-min/max in O(log n)
+
+├── II. Input Type (Parse Layer)
+│   ├── raw array → heapify to build O(n)
+│   ├── stream of numbers → online top-K or running median
+│   ├── pair/tuple elements → (priority, value) in heap
+│   └── multiple lists/arrays → k-way merge with heap
+
+├── III. Algorithm Toolbox (Heap Engine)
+│   ├── Top-K elements → maintain size-k min/max heap
+│   ├── Heap Sort → sort array via pop heap repeatedly
+│   ├── Priority scheduling → always extract highest/lowest priority
+│   ├── Merge K-sorted lists/arrays → min-heap of current heads
+│   ├── Running median → two-heaps (max-left, min-right)
+│   └── Sliding window extrema → heap + lazy deletion / PQ
+
+└── IV. Pattern → Algorithm Mapping (Problem Intent)
+    ├── Top-K / Frequent
+    │     ├── “k largest / smallest / k most frequent”
+    │     └── Use: Min-heap for largest, Max-heap for smallest/freq
+    ├── Priority Task Scheduling
+    │     ├── “process by priority / least interval / meeting rooms”
+    │     └── Use: Min-heap (by end time) / Max-heap (by priority)
+    ├── Merge K Sorted Lists
+    │     ├── “merge k arrays / lists / streams”
+    │     └── Use: Min-heap with (value, source idx)
+    ├── Running Median / Percentile
+    │     ├── “data stream median”
+    │     └── Use: Two heaps (max-left, min-right)
+    ├── Stream Top-K
+    │     ├── “kth largest in stream / online leaderboard”
+    │     └── Use: Min-heap of size k
+    └── Sliding Window / Extrema
+          ├── “max in window / kth in window”
+          └── Use: Heap + lazy deletion (monotonic deque is alt)
+
+```
+
 ## **🧠 Heap Patterns**
 
 ### 🧭 Step 1: Recognize Heap Need
