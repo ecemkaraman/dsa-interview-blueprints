@@ -4,7 +4,7 @@
 ## 1. 🐢🐇 **Two-Pointer Techniques**
 
   <details>
-    <summary> "**Cycle Detection**:" </summary>
+    <summary> <b>Cycle Detection </b> </summary>
 
     `fast = 2x slow` → if they meet(`fast == slow`) → **cycle exists**
     
