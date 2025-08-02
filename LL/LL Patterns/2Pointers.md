@@ -18,6 +18,8 @@ def has_cycle(head):
     return False  # No cycle
 ```
 
+---
+
 **Cycle Entry Point**
 
 After `fast == slow` → reset `slow = head` → move `slow` & `fast` 1 step each → where they meet = **entry point → • logic: distance from head to entry = distance from meeting point to entry**
