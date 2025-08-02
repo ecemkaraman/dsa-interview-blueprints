@@ -9,7 +9,11 @@
 - **Nth from end** → `fast ahead n+1 ⇒ slow at node before target`
 - **Palindrome check** → `find mid → reverse 2nd half → compare halves`
 - **Intersection node** → `a=headA, b=headB → switch heads on end ⇒ meet or None`
-
+    <aside>
+    - **🌀 Detect cycle:** Use `slow`, `fast` (2x speed); if they meet (`fast == slow`)  → cycle exists, else `fast` hits `None`.
+- **🚪 Find cycle entry:** After meeting inside loop, reset `slow = head` → move both 1 step → meeting point = cycle start.
+- **🧭 Find middle of LL:** Use `fast = 2x slow`; when `fast` ends → `slow = mid` (📎 even → 2nd mid, 📎 odd → exact mid).
+    </aside>
 ---
 
 ### 2. **🔁 Reversal (Full / Partial)**
